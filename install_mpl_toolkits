@@ -16,3 +16,16 @@ pip3 install https://github.com/matplotlib/basemap/archive/master.zip
 For Ubuntu,
 sudo apt-get install geos
 sudo pip3 install https://github.com/matplotlib/basemap/archive/master.zip
+
+
+
+
+按照官网介绍并不能成功Basemap Matplotlib Toolkit 1.1.0 documentationbasemap依赖geos和pyproj所以下载basemap后，需要安装geos和pyproj。  
+1.Press Command+Space and type Terminal and press enter/return key.  
+2.Run in Terminal app:ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> 
+/dev/nulland press enter/return key. Wait for the command to finish.3.Run:brew install geos4.在文件目录下可以看到 
+/usr/local/Cellar/geos/3.6.1Run:export GEOS_DIR=/usr/local/Cellar/geos/3.6.1
+
+5.在根据官网介绍Run:python setup.py installpythonmpl_toolkits.basemap import Basemap
+6.此时会遇到 ImportError: No module named pyproj因为依赖pyproj ，
+所以Run:pip3 install pyproj（因为我所有的包都安装在python3.0+下,如果电脑有2.7和3.0+这里有坑，确定下在哪一个包中）（文中包括了两种安装方式，可以都使用pip3）
