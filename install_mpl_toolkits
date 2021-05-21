@@ -1,0 +1,18 @@
+install Brew 
+
+https://brew.sh/
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+
+AND THEN 
+
+
+For MAC
+brew install geos
+pip3 install https://github.com/matplotlib/basemap/archive/master.zip
+
+
+For Ubuntu,
+sudo apt-get install geos
+sudo pip3 install https://github.com/matplotlib/basemap/archive/master.zip
